@@ -1,0 +1,27 @@
+\section{Fragebogen}
+\textit{Bitte beantworten Sie folgende Fragen zu Ihrer Anforderung. Die Informationen helfen uns, Ihre Anforderung in Bezug auf Art und Umfang einzuschätzen. \\ \\
+}
+
+\begin{Form}
+  \begin{enumerate}
+  	\item \textbf{Hintergrund} \\
+  	Was ist der Kontext zu dem was getan werden soll? Maximal drei Sätze \\
+  	\TextField[multiline, name=background,width=0.9\textwidth,  height=2cm, value={} ]{}
+  	
+  	\item \textbf{Ziele} \\
+  	Welche (übergeordneten) Ziele werden mit dem Vorhaben gefördert? Maximal drei Sätze  \\
+  	\TextField[multiline, name=goal,width=0.9\textwidth,  height=2cm, value={} ]{}
+  	
+  	\item \textbf{Mehrwert} \\
+  	Welcher Nutzen entsteht für welchen Nutzerkreis? Wieviele Kliniken können von dem Projekt profitieren? Findet eine Standardisierung statt?  \\
+  	\TextField[multiline, name=value,width=0.9\textwidth,  height=2cm, value={} ]{}
+  	
+  	\item \textbf{Muss-Kriterien} \\
+  	Gibt es harte, auf jeden Fall umzusetzende Anforderungen oder gesetzliche Anforderungen?   \\
+  	\TextField[multiline, name=must,width=0.9\textwidth,  height=2cm, value={} ]{}
+  	
+  	\item \textbf{Business Impact} \\
+  	Was passiert, wenn die Anforderung nicht umgesetzt wird (z.B. Systemstopp, Strafzahlungen, Audit-Finding)?   \\
+  	\TextField[multiline, name=business,width=0.9\textwidth,  height=2cm, value={} ]{}
+  \end{enumerate}
+\end{Form}
