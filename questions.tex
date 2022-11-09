@@ -42,7 +42,29 @@
   	\item[3-] \TextField[name=item83, width=12.9cm]{}
   \end{enumerate}
 
-	\item Gibt es eine bestehende Funktion, die Ihre Anforderung ebenfalls erfüllen könnte, oder zur Zeit noch erfüllt (ggf. mit Mehraufwand, Work-Around)? \ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=func]{} {Ja=j,Nein=n}
+	\item Gibt es eine bestehende Funktion, die Ihre Anforderung ebenfalls erfüllen könnte, oder zur Zeit noch erfüllt (ggf. mit Mehraufwand, Work-Around)? \\ \ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=func]{} {ja=j,nein=n} \\
+	Wenn ja, welche bestehende Funktion? \\
+	\TextField[multiline, name=jfunc,width=0.9\textwidth,  height=2cm, value={}]{}
+	
+	\item Hat Ihre Anforderung viele Schnittstellen zu anderen Systemen, Prozessen oder Abteilungen? \\ \ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=conse]{} {ja=j,nein=n} \\
+	Wenn ja, welche Schnittstellen? \\
+	\TextField[multiline, name=jconse,width=0.9\textwidth,  height=2cm, value={}]{}
+	
+	\item Handelt es sich um die Anschaffung einer komplett neuen Hard- oder Software(modul)? \\ \ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=soha]{} {ja=j,nein=n} \\
+	Wenn ja, welche Anschaffung? \\
+	\TextField[multiline, name=jsoja,width=0.9\textwidth,  height=2cm, value={}]{}
+	
+	\item Betrifft Ihre Anforderung eine größere Anzahl von Usern (klinik-/abteilungsübergreifend)? \\ \ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=user]{} {ja=j,nein=n} \\
+	Wenn ja, welche User? \\
+	\TextField[multiline, name=juser,width=0.9\textwidth,  height=2cm, value={}]{}
+	
+	\item Werden durch die umzusetzende Anforderung personenbezogene Daten verarbeitet (allg. Daten (Name, E-Mail etc.), Gesundsheitsdaten, genetische Daten, biometrische Daten)? \\ \ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=persodata]{} {ja=j,nein=n} \\
+	Wenn ja, welche? \\
+	\TextField[multiline, name=jpersodata,width=0.9\textwidth,  height=2cm, value={}]{}
+	
+	\item Hat die Anforderungen Schnittstellen außerhalb der UM? \\ \ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=outum]{} {ja=j,nein=n} \\
+	Wenn ja, welche? \\
+	\TextField[multiline, name=joutum,width=0.9\textwidth,  height=2cm, value={}]{}
 
   \end{enumerate}
 \end{Form}
