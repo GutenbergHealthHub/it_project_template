@@ -1,3 +1,4 @@
+rm *.out *.gz *.aux *.log
 d=`date`
 git add *.tex *.pdf *.html *.css *.sh
 git commit -m "Last update $d."
