@@ -26,21 +26,13 @@
   	\newpage
   	\item \textbf{Business Impact} \\
   	Was passiert, wenn die Anforderung nicht umgesetzt wird (z.B. Systemstopp, Strafzahlungen, Audit-Finding)?   \\
-  	\TextField[multiline, name=business,width=0.9\textwidth,  height=2cm, value={} ]{}
+  	\TextField[multiline, name=business,width=0.9\textwidth,  height=2cm, value={}]{}
   	
-  	\item Bitte beschrieben Sie den aktuellen Prozess (IST-Zustand), der durch die Anforderung verändert wird (Aktivität, verantwortliche Person).
-  	\begin{enumerate} 
-  		\item[1-] \TextField[name=item71, width=12.9cm]{}
-  		\item[2-] \TextField[name=item72, width=12.9cm]{}
-  		\item[3-] \TextField[name=item73, width=12.9cm]{}
-  	\end{enumerate}
+  	\item Bitte beschreiben Sie den aktuellen Prozess (IST-Zustand), der durch die Anforderung verändert wird (Aktivität, verantwortliche Person). \\
+  	\TextField[multiline, name=proces,width=0.9\textwidth,  height=2cm, value={}]{}
   
-  \item Bitte beschreiben Sie den gewünschten Zielprozess (Aktivität, verantwortliche Person).  
-  \begin{enumerate} 
-  	\item[1-] \TextField[name=item81, width=12.9cm]{}
-  	\item[2-] \TextField[name=item82, width=12.9cm]{}
-  	\item[3-] \TextField[name=item83, width=12.9cm]{}
-  \end{enumerate}
+  \item Bitte beschreiben Sie den gewünschten Zielprozess (Aktivität, verantwortliche Person). \\ 
+  \TextField[multiline, name=descrgoal,width=0.9\textwidth,  height=2cm, value={}]{}
 
 	\item Gibt es eine bestehende Funktion, die Ihre Anforderung ebenfalls erfüllen könnte, oder zur Zeit noch erfüllt (ggf. mit Mehraufwand, Work-Around)? \\ \ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=func]{} {ja=j,nein=n} \\
 	Wenn ja, welche bestehende Funktion? \\
@@ -49,7 +41,7 @@
 	\item Hat Ihre Anforderung viele Schnittstellen zu anderen Systemen, Prozessen oder Abteilungen? \\ \ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=conse]{} {ja=j,nein=n} \\
 	Wenn ja, welche Schnittstellen? \\
 	\TextField[multiline, name=jconse,width=0.9\textwidth,  height=2cm, value={}]{}
-	
+	\newpage
 	\item Handelt es sich um die Anschaffung einer komplett neuen Hard- oder Software(modul)? \\ \ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=soha]{} {ja=j,nein=n} \\
 	Wenn ja, welche Anschaffung? \\
 	\TextField[multiline, name=jsoja,width=0.9\textwidth,  height=2cm, value={}]{}
