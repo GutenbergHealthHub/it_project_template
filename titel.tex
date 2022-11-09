@@ -14,13 +14,23 @@ Bitte senden Sie den ausgefüllten Projektantrag an \href{mailto:IT-Projektantra
 
 \begin{Form}
 
-\begin{tabular}{ p{3.4cm} p{3cm} p{3.5cm} p{1.5cm} p{3cm} } 
+\begin{tabular}{p{3.4cm} p{3cm} p{3.5cm} p{1.5cm} p{3cm} } 
 	& \textbf{Name, Vorname} & \textbf{Funktion in der UM} & \textbf{Telefon} & \textbf{E-Mail} \\ \\
 \textbf{Anforderungssteller} & \TextField[name=NameAnst, width=2.9cm]{} & \TextField[name=FunctAnst, width=3.4cm]{} & \TextField[name=TelAnst, width=1.4cm]{} & \TextField[name=EMaillAnst, width=2.9cm]{} \\ \\
-\textbf{Auftraggeber} & \TextField[name=NameAust, width=2.9cm]{} & \TextField[name=FunctAust, width=3.4cm]{} & \TextField[name=TelAust, width=1.4cm]{} & \TextField[name=EMaillAust, width=2.9cm]{}  \\ \\
-\textbf{Weitere Ansprechpartner} &  \TextField[name=NameWA, width=2.9cm]{} & \TextField[name=FunctWA, width=3.4cm]{} & \TextField[name=TelWA, width=1.4cm]{} & \TextField[name=EMaillWA, width=2.9cm]{}  \\ 
-\textbf{Weitere Ansprechpartner} &  \TextField[name=NameWA1, width=2.9cm]{} & \TextField[name=FunctWA1, width=3.4cm]{} & \TextField[name=TelWA1, width=1.4cm]{} & \TextField[name=EMaillWA1, width=2.9cm]{}  \\ 
+\textbf{Auftraggeber} & \TextField[name=NameAust, width=2.9cm]{} & \TextField[name=FunctAust, width=3.4cm]{} & \TextField[name=TelAust, width=1.4cm]{} & \TextField[name=EMaillAust, width=2.9cm]{}  \\ \\   
+\end{tabular} 
+\hspace*{0.3cm}
+\begin{tabular}[t]{ll}
+ \multicolumn{1}{l}{
+ \begin{tabular}{l}
+ \textbf{Weitere Ansprechpartner} \\ \\ \\  \\ \\ \\  
+ \end{tabular}	
+ 	}  & \TextField[multiline, name=WA,width=10.8cm,  height=1.5cm, value={}]{} 
+
+ 
 \end{tabular}
+
+% \multicolumn{1}{l}{\textbf{Weitere Ansprechpartner} } & \TextField[multiline, name=WA,width=11.1cm,  height=2cm, value={}]{}
 
 \end{Form}
 

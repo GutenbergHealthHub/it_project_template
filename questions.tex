@@ -13,7 +13,7 @@
   	\TextField[multiline, name=goal,width=0.9\textwidth,  height=2cm, value={} ]{}
   	
   	\item \textbf{Mehrwert} \\
-  	Welcher Nutzen entsteht für welchen Nutzerkreis? Wieviele Kliniken können von dem Projekt profitieren? Findet eine Standardisierung statt?  \\
+  	Welcher Nutzen entsteht für welchen Nutzerkreis? \\
   	\TextField[multiline, name=value,width=0.9\textwidth,  height=2cm, value={} ]{}
   	
   	\item \textbf{Muss-Kriterien} \\
@@ -28,33 +28,49 @@
   	Was passiert, wenn die Anforderung nicht umgesetzt wird (z.B. Systemstopp, Strafzahlungen, Audit-Finding)?   \\
   	\TextField[multiline, name=business,width=0.9\textwidth,  height=2cm, value={}]{}
   	
-  	\item Bitte beschreiben Sie den aktuellen Prozess (IST-Zustand), der durch die Anforderung verändert wird (Aktivität, verantwortliche Person). \\
+  	\item Bitte beschreiben Sie den aktuellen Prozess (IST-Zustand), der durch die Anforderung verändert wird (Aktivität, verantwortliche Person, involvierte IT-Systeme). \\
   	\TextField[multiline, name=proces,width=0.9\textwidth,  height=2cm, value={}]{}
   
-  \item Bitte beschreiben Sie den gewünschten Zielprozess (Aktivität, verantwortliche Person). \\ 
+  \item Bitte beschreiben Sie den gewünschten Zielprozess (Aktivität, verantwortliche Person, involvierte IT-Systeme). \\ 
   \TextField[multiline, name=descrgoal,width=0.9\textwidth,  height=2cm, value={}]{}
 
-	\item Gibt es eine bestehende Funktion, die Ihre Anforderung ebenfalls erfüllen könnte, oder zur Zeit noch erfüllt (ggf. mit Mehraufwand, Work-Around)? \\ \ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=func]{} {ja=j,nein=n} \\
+	\item Gibt es eine bestehende Funktion, die Ihre Anforderung ebenfalls erfüllen könnte, oder zur Zeit noch erfüllt (ggf. mit Mehraufwand, Work-Around)? \\ 
+	\ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=func]{} {ja=j,nein=n} \\
 	Wenn ja, welche bestehende Funktion? \\
 	\TextField[multiline, name=jfunc,width=0.9\textwidth,  height=2cm, value={}]{}
 	
-	\item Hat Ihre Anforderung viele Schnittstellen zu anderen Systemen, Prozessen oder Abteilungen? \\ \ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=conse]{} {ja=j,nein=n} \\
-	Wenn ja, welche Schnittstellen? \\
-	\TextField[multiline, name=jconse,width=0.9\textwidth,  height=2cm, value={}]{}
+	\item Hat Ihre Anforderung Schnittstellen zu anderen Systemen? \\ 
+	\ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=consesyst]{} {ja=j,nein=n} \\
+	Wenn ja, welche Systeme? \\
+	\TextField[multiline, name=jconsesyst,width=0.9\textwidth,  height=2cm, value={}]{}
 	\newpage
-	\item Handelt es sich um die Anschaffung einer komplett neuen Hard- oder Software(modul)? \\ \ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=soha]{} {ja=j,nein=n} \\
-	Wenn ja, welche Anschaffung? \\
+	
+	\item Hat Ihre Anforderung Schnittstellen zu anderen Prozessen? \\ 
+	\ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=consepro]{} {ja=j,nein=n} \\
+	Wenn ja, welche Prozesse? \\
+	\TextField[multiline, name=jconsepro,width=0.9\textwidth,  height=2cm, value={}]{}
+	
+	\item Hat Ihre Anforderung Schnittstellen zu anderen Abteilungen? \\ 
+	\ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=consedep]{} {ja=j,nein=n} \\
+	Wenn ja, welche Abteilungen? \\
+	\TextField[multiline, name=jconsedep,width=0.9\textwidth,  height=2cm, value={}]{}
+	
+	\item Handelt es sich um die Anschaffung einer komplett neuen Hard- oder Software? \\ 
+	\ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=soha]{} {ja=j,nein=n} \\
+	Wenn ja, welche Hard- oder Software? \\
 	\TextField[multiline, name=jsoja,width=0.9\textwidth,  height=2cm, value={}]{}
 	
 	\item Betrifft Ihre Anforderung eine größere Anzahl von Usern (klinik-/abteilungsübergreifend)? \\ \ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=user]{} {ja=j,nein=n} \\
-	Wenn ja, welche User? \\
+	Wenn ja, welche User und Kliniken? \\
 	\TextField[multiline, name=juser,width=0.9\textwidth,  height=2cm, value={}]{}
 	
-	\item Werden durch die umzusetzende Anforderung personenbezogene Daten verarbeitet (allg. Daten (Name, E-Mail etc.), Gesundsheitsdaten, genetische Daten, biometrische Daten)? \\ \ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=persodata]{} {ja=j,nein=n} \\
-	Wenn ja, welche? \\
+	\item Werden durch die umzusetzende Anforderung personenbezogene Daten verarbeitet (allg. Daten (Name, E-Mail etc.), Gesundsheitsdaten, genetische Daten, biometrische Daten)? \\ 
+	\ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=persodata]{} {ja=j,nein=n} \\
+	Wenn ja, welche Daten? \\
 	\TextField[multiline, name=jpersodata,width=0.9\textwidth,  height=2cm, value={}]{}
-	
-	\item Hat die Anforderungen Schnittstellen außerhalb der UM? \\ \ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=outum]{} {ja=j,nein=n} \\
+	\newpage
+	\item Hat die Anforderungen Schnittstellen außerhalb der UM? \\ 
+	\ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=outum]{} {ja=j,nein=n} \\
 	Wenn ja, welche? \\
 	\TextField[multiline, name=joutum,width=0.9\textwidth,  height=2cm, value={}]{}
 
