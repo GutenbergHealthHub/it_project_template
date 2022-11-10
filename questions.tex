@@ -60,8 +60,9 @@
 	Wenn ja, welche Hard- oder Software? \\
 	\TextField[multiline, name=jsoja,width=0.9\textwidth,  height=2cm, value={}]{}
 	
-	\item Betrifft Ihre Anforderung eine größere Anzahl von Usern (klinik-/abteilungsübergreifend)? \\ \ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=user]{} {ja=j,nein=n} \\
-	Wenn ja, welche User und Kliniken? \\
+	\item Ist Ihre Anforderung potentiell für weitere Kliniken relevant?
+	 \\ \ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=user]{} {ja=j,nein=n} \\
+	Wenn ja, welche Kliniken? \\
 	\TextField[multiline, name=juser,width=0.9\textwidth,  height=2cm, value={}]{}
 	
 	\item Werden durch die umzusetzende Anforderung personenbezogene Daten verarbeitet (allg. Daten (Name, E-Mail etc.), Gesundsheitsdaten, genetische Daten, biometrische Daten)? \\ 
