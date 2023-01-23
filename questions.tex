@@ -8,9 +8,11 @@
   	Was ist der Kontext zu dem was getan werden soll? Maximal drei Sätze \\
   	\TextField[multiline, name=background,width=0.9\textwidth,  height=2cm, value={} ]{}
   	
-  	\item \textbf{Ziele} \\
+  	%\item \textbf{Ziele} \\
+  	%Welche (übergeordneten) Ziele werden mit dem Vorhaben gefördert? Maximal drei Sätze  \\
+  	\item \textbf{Projektbeschreibung} \\
   	Welche (übergeordneten) Ziele werden mit dem Vorhaben gefördert? Maximal drei Sätze  \\
-  	\TextField[multiline, name=goal,width=0.9\textwidth,  height=2cm, value={} ]{}
+  	\TextField[multiline, name=goal,width=0.9\textwidth,  height=2cm, value={}]{}
   	
   	\item \textbf{Mehrwert} \\
   	Welcher Nutzen entsteht für welchen Nutzerkreis? \\
@@ -27,6 +29,9 @@
   	\item \textbf{Business Impact} \\
   	Was passiert, wenn die Anforderung nicht umgesetzt wird (z.B. Systemstopp, Strafzahlungen, Audit-Finding)?   \\
   	\TextField[multiline, name=business,width=0.9\textwidth,  height=2cm, value={}]{}
+  	
+  	\item \textbf{Kostenstelle} \\ 
+  	Bitte nennen Sie die Kostenstelle, die das Projekt finanziert: \TextField[name=costen, width=3.5cm, value={}]{}
   	
   	\item Bitte beschreiben Sie den aktuellen Prozess (IST-Zustand), der durch die Anforderung verändert wird (Aktivität, verantwortliche Person, involvierte IT-Systeme). \\
   	\TextField[multiline, name=proces,width=0.9\textwidth,  height=2cm, value={}]{}
