@@ -1,39 +1,47 @@
 \begin{titlepage}
 	\thispagestyle{firstpage}
-	
+	\vspace{1cm}
 	{\centering
-	\vspace*{2cm}
-	{\scshape\huge Projektantrag für neue Anforderungen an SC6 IT \par}
-    }
-\vspace{1.5cm}
-\par 
-\noindent
-\textit{Bitte füllen Sie alle hinterlegten Felder aus. Sie können mit Stichpunkten antworten. \\ \\
-Bitte senden Sie den ausgefüllten Projektantrag an \href{mailto:IT-Projektantrag@unimedizin-mainz.de}{IT-Projektantrag@unimedizin-mainz.de}. \\ \\
-}
 
-\vspace{2.5cm}
+		{\scshape\huge Projektantrag für neue Anforderungen an GB IT \par}
+	}
+	\vspace{1cm}
 
-\begin{Form}
+	\textit{Bitte füllen Sie alle hinterlegten Felder aus. Sie können mit Stichpunkten antworten. \\
+		Bitte senden Sie den ausgefüllten Projektantrag an \href{mailto:IT-Projektantrag@unimedizin-mainz.de}{IT-Projektantrag@unimedizin-mainz.de}. \\
+	}
 
-\begin{tabular}{p{3.4cm} p{3cm} p{3.5cm} p{1.5cm} p{3cm} } 
-	& \textbf{Name, Vorname} & \textbf{Funktion in der UM} & \textbf{Telefon} & \textbf{E-Mail} \\ \\
-\textbf{Anforderungssteller} & \TextField[name=NameAnst, width=2.9cm]{} & \TextField[name=FunctAnst, width=3.4cm]{} & \TextField[name=TelAnst, width=1.4cm]{} & \TextField[name=EMaillAnst, width=2.9cm]{} \\ \\
-\textbf{Auftraggeber} & \TextField[name=NameAust, width=2.9cm]{} & \TextField[name=FunctAust, width=3.4cm]{} & \TextField[name=TelAust, width=1.4cm]{} & \TextField[name=EMaillAust, width=2.9cm]{}  \\ \\   
-\end{tabular} 
-\hspace*{0.3cm}
-\begin{tabular}[t]{ll}
- \multicolumn{1}{l}{
- \begin{tabular}{l}
- \textbf{Weitere Ansprechpartner} \\ \\ \\  \\ \\ \\  
- \end{tabular}	
- 	}  & \TextField[multiline, name=WA,width=10.8cm,  height=1.5cm, value={}]{} 
+	\vspace{0.5cm}
+	\begin{tabular}[c]{lr}
+		\textbf{Einreichungsdatum:} & \TextField[name=date, width=3cm]{} \\
+	\end{tabular}
+	\vspace{0.5cm}
 
- 
-\end{tabular}
+	{\noindent\Large Antragssteller*in}
+	\vspace{0.5cm}
 
-% \multicolumn{1}{l}{\textbf{Weitere Ansprechpartner} } & \TextField[multiline, name=WA,width=11.1cm,  height=2cm, value={}]{}
+	\begin{tabular}{lrp{5cm}}
+		\textbf{Name:}               & \TextField[name=nameAnst, width=5cm]{}    \\ \\
+		\textbf{Vorname:}            & \TextField[name=surnameAnst, width=5cm]{} \\ \\
+		\textbf{Funktion in der UM:} & \TextField[name=funcAnst, width=5cm]{}    \\ \\
+		\textbf{Telefon:}            & \TextField[name=phoneAnst, width=5cm]{}   \\ \\
+		\textbf{Email:}              & \TextField[name=mailAnst, width=5cm]{}    \\ \\
+	\end{tabular}
 
-\end{Form}
+	\vspace{0.5cm}
+	{\noindent\Large Auftraggeber*in}
+	\vspace{0.5cm}
+
+	\begin{tabular}{lr}
+		\textbf{Name:}               & \TextField[name=nameAust, width=5cm]{}    \\ \\
+		\textbf{Vorname:}            & \TextField[name=surnameAust, width=5cm]{} \\ \\
+		\textbf{Funktion in der UM:} & \TextField[name=funcAust, width=5cm]{}    \\ \\
+		\textbf{Telefon:}            & \TextField[name=phoneAust, width=5cm]{}   \\ \\
+		\textbf{Email:}              & \TextField[name=mailAust, width=5cm]{}    \\ \\
+	\end{tabular}
+	\vspace{0.5cm}
+
+	{\textbf{Weitere Teilnehmer*innen (Falls zutreffend)}} \\
+	\indent\TextField[multiline, name=WA,width=0.9\textwidth,  height=1.75cm, value={}]{}
 
 \end{titlepage}

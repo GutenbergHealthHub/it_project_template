@@ -26,36 +26,27 @@
 \fancypagestyle{firstpage}
 {	
     \pagestyle{fancy}
-	\fancyhf{}
-	\chead{ \includegraphics[width=\textwidth]{figures/ummz.png}}
+    \fancyhead[L,C]{}
+    \fancyhead[R]{\includegraphics[width=200pt]{figures/ummz.png}}
+    \setlength{\headheight}{42pt}
 	\renewcommand{\headrulewidth}{0pt}
 }
   
 \begin{document}
 
-  \input{titel}
-  \input{questions}  
-  %\include{Bacronyms}	
-  %\clearpage
-%  \tableofcontents{}
-  
-  %\input{general}
-  %\input{patients}
-  %\input{movements_by_years}
-  %\input{cases}
-  %\input{cases_by_years}
-  %\input{diagnosis_by_years}
-  %\input{procedures_by_years}
-  \vspace*{1cm}
-  \noindent
-  Bei Rückfragen senden Sie bitte eine E-Mail an:
-   \href{mailto:IT-Projektantrag@unimedizin-mainz.de}{IT-Projektantrag@unimedizin-mainz.de} 
-  %	\vspace{1.5cm}
-  %	{\huge \bfseries Data Warehouse\par}
-  %	\vspace{2cm}
-  %\includegraphics[width=10cm]{figures/diz.jpg}
-  
-  % Bottom of the page
-  %{\large \today\par}
-  
+\input{titel}
+\input{questions}
+
+\vspace*{1cm}
+\noindent
+Bei Rückfragen senden Sie bitte eine E-Mail an:
+\href{mailto:IT-Projektantrag@unimedizin-mainz.de}{IT-Projektantrag@unimedizin-mainz.de}
+%	\vspace{1.5cm}
+%	{\huge \bfseries Data Warehouse\par}
+%	\vspace{2cm}
+%\includegraphics[width=10cm]{figures/diz.jpg}
+
+% Bottom of the page
+%{\large \today\par}
+
 \end{document}

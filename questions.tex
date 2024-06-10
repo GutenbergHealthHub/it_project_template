@@ -1,92 +1,92 @@
 \section{Fragebogen}
-\textit{Bitte beantworten Sie folgende Fragen zu Ihrer Anforderung. Die Informationen helfen uns, Ihre Anforderung in Bezug auf Art und Umfang einzuschätzen. \\ \\
+\textit{Bitte beantworten Sie folgende Fragen zu Ihrer Anforderung. Die Informationen helfen uns, Ihre Anforderung in Bezug auf Art und Umfang einzuschätzen. \\
 }
 
 \begin{Form}
-  \begin{enumerate}
-  	
-  	\item \textbf{Projektbeschreibung} \\
-  	Bitte schildern Sie stichwortartig Ihre Projektanforderungen  \\
-  	\TextField[multiline, name=description,width=0.9\textwidth,  height=2cm, value={}]{}
-  	
-  	\item \textbf{Hintergrund} \\
-  	Was ist der Kontext zu dem was getan werden soll? Maximal drei Sätze \\
-  	\TextField[multiline, name=background,width=0.9\textwidth,  height=2cm, value={} ]{}
-  	
-  	\item \textbf{Ziele} \\
-  	Welche (übergeordneten) Ziele werden mit dem Vorhaben gefördert? Maximal drei Sätze  \\
-  	\TextField[multiline, name=goal,width=0.9\textwidth,  height=2cm, value={}]{}
-  	
-  	\item \textbf{Mehrwert} \\
-  	Welcher Nutzen entsteht für welchen Nutzerkreis? \\
-  	\TextField[multiline, name=value,width=0.9\textwidth,  height=2cm, value={} ]{}
-  	
-  	\item \textbf{Muss-Kriterien} \\
-  	Gibt es harte, auf jeden Fall umzusetzende Anforderungen oder gesetzliche Anforderungen?   \\
-  	\TextField[multiline, name=must,width=0.9\textwidth,  height=2cm, value={}]{}
+	\begin{enumerate}
 
-  	\newpage
+		\item \textbf{Projektbeschreibung} \\
+		      Bitte schildern Sie stichwortartig Ihre Projektanforderungen  \\
+		      \TextField[multiline, name=description,width=0.9\textwidth,  height=2cm, value={}]{}
 
-  	\item \textbf{Dringlichkeit } \\
-  Gibt es eine Deadline? In welchem Zeitraum muss die Anforderung umgesetzt werden? \\
-  	\TextField[multiline, name=priority,width=0.9\textwidth,  height=2cm, value={} ]{}
+		\item \textbf{Hintergrund} \\
+		      Was ist der Kontext zu dem was getan werden soll? Maximal drei Sätze \\
+		      \TextField[multiline, name=background,width=0.9\textwidth,  height=2cm, value={} ]{}
 
-  	\item \textbf{Business Impact} \\
-  	Was passiert, wenn die Anforderung nicht umgesetzt wird (z.B. Systemstopp, Strafzahlungen, Audit-Finding)?   \\
-  	\TextField[multiline, name=business,width=0.9\textwidth,  height=2cm, value={}]{}
-  	
-  	\item \textbf{Kostenstelle} \\ 
-  	Bitte nennen Sie die Kostenstelle, die das Projekt finanziert: \TextField[name=costen, width=3.5cm, value={}]{}
-  	
-  	\item Bitte beschreiben Sie den aktuellen Prozess (IST-Zustand), der durch die Anforderung verändert wird (Aktivität, verantwortliche Person, involvierte IT-Systeme). \\
-  	\TextField[multiline, name=proces,width=0.9\textwidth,  height=2cm, value={}]{}
-  
-  \item Bitte beschreiben Sie den gewünschten Zielprozess (Aktivität, verantwortliche Person, involvierte IT-Systeme). \\ 
-  \TextField[multiline, name=descrgoal,width=0.9\textwidth,  height=2cm, value={}]{}
+		\item \textbf{Ziele} \\
+		      Welche (übergeordneten) Ziele werden mit dem Vorhaben gefördert? Maximal drei Sätze  \\
+		      \TextField[multiline, name=goal,width=0.9\textwidth,  height=2cm, value={}]{}
 
-	\item Gibt es eine bestehende Funktion, die Ihre Anforderung ebenfalls erfüllen könnte, oder zur Zeit noch erfüllt (ggf. mit Mehraufwand, Work-Around)? \\ 
-	\ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=func]{} {ja=j,nein=n} \\
-	Wenn ja, welche bestehende Funktion? \\
-	\TextField[multiline, name=jfunc,width=0.9\textwidth,  height=2cm, value={}]{}
+		\item \textbf{Mehrwert} \\
+		      Welcher Nutzen entsteht für welchen Nutzerkreis? \\
+		      \TextField[multiline, name=value,width=0.9\textwidth,  height=2cm, value={} ]{}
 
-	\newpage
+		\item \textbf{Muss-Kriterien} \\
+		      Gibt es harte, auf jeden Fall umzusetzende Anforderungen oder gesetzliche Anforderungen?   \\
+		      \TextField[multiline, name=must,width=0.9\textwidth,  height=2cm, value={}]{}
 
-	\item Hat Ihre Anforderung Schnittstellen zu anderen Systemen? \\ 
-	\ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=consesyst]{} {ja=j,nein=n} \\
-	Wenn ja, welche Systeme? \\
-	\TextField[multiline, name=jconsesyst,width=0.9\textwidth,  height=2cm, value={}]{}
-	
-	\item Hat Ihre Anforderung Schnittstellen zu anderen Prozessen? \\ 
-	\ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=consepro]{} {ja=j,nein=n} \\
-	Wenn ja, welche Prozesse? \\
-	\TextField[multiline, name=jconsepro,width=0.9\textwidth,  height=2cm, value={}]{}
-	
-	\item Hat Ihre Anforderung Schnittstellen zu anderen Abteilungen? \\ 
-	\ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=consedep]{} {ja=j,nein=n} \\
-	Wenn ja, welche Abteilungen? \\
-	\TextField[multiline, name=jconsedep,width=0.9\textwidth,  height=2cm, value={}]{}
-	
-	\item Handelt es sich um die Anschaffung einer komplett neuen Hard- oder Software? \\ 
-	\ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=soha]{} {ja=j,nein=n} \\
-	Wenn ja, welche Hard- oder Software? \\
-	\TextField[multiline, name=jsoja,width=0.9\textwidth,  height=2cm, value={}]{}
-	
-	\item Ist Ihre Anforderung potentiell für weitere Kliniken relevant?
-	 \\ \ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=user]{} {ja=j,nein=n} \\
-	Wenn ja, für welche Kliniken? \\
-	\TextField[multiline, name=juser,width=0.9\textwidth,  height=2cm, value={}]{}
+		      \newpage
 
-	\newpage
+		\item \textbf{Dringlichkeit } \\
+		      Gibt es eine Deadline? In welchem Zeitraum muss die Anforderung umgesetzt werden? \\
+		      \TextField[multiline, name=priority,width=0.9\textwidth,  height=2cm, value={} ]{}
 
-	\item Werden durch die umzusetzende Anforderung personenbezogene Daten verarbeitet (allg. Daten (Name, E-Mail etc.), Gesundsheitsdaten, genetische Daten, biometrische Daten)? \\ 
-	\ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=persodata]{} {ja=j,nein=n} \\
-	Wenn ja, welche Daten? \\
-	\TextField[multiline, name=jpersodata,width=0.9\textwidth,  height=2cm, value={}]{}
-	
-	\item Hat die Anforderungen Schnittstellen außerhalb der UM? \\ 
-	\ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=outum]{} {ja=j,nein=n} \\
-	Wenn ja, welche? \\
-	\TextField[multiline, name=joutum,width=0.9\textwidth,  height=2cm, value={}]{}
+		\item \textbf{Business Impact} \\
+		      Was passiert, wenn die Anforderung nicht umgesetzt wird (z.B. Systemstopp, Strafzahlungen, Audit-Finding)?   \\
+		      \TextField[multiline, name=business,width=0.9\textwidth,  height=2cm, value={}]{}
 
-  \end{enumerate}
+		\item \textbf{Kostenstelle} \\
+		      Bitte nennen Sie die Kostenstelle, die das Projekt finanziert: \TextField[name=costen, width=3.5cm, value={}]{}
+
+		\item Bitte beschreiben Sie den aktuellen Prozess (IST-Zustand), der durch die Anforderung verändert wird (Aktivität, verantwortliche Person, involvierte IT-Systeme). \\
+		      \TextField[multiline, name=proces,width=0.9\textwidth,  height=2cm, value={}]{}
+
+		\item Bitte beschreiben Sie den gewünschten Zielprozess (Aktivität, verantwortliche Person, involvierte IT-Systeme). \\
+		      \TextField[multiline, name=descrgoal,width=0.9\textwidth,  height=2cm, value={}]{}
+
+		\item Gibt es eine bestehende Funktion, die Ihre Anforderung ebenfalls erfüllen könnte, oder zur Zeit noch erfüllt (ggf. mit Mehraufwand, Work-Around)? \\
+		      \ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=func]{} {ja=j,nein=n} \\
+		      Wenn ja, welche bestehende Funktion? \\
+		      \TextField[multiline, name=jfunc,width=0.9\textwidth,  height=2cm, value={}]{}
+
+		      \newpage
+
+		\item Hat Ihre Anforderung Schnittstellen zu anderen Systemen? \\
+		      \ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=consesyst]{} {ja=j,nein=n} \\
+		      Wenn ja, welche Systeme? \\
+		      \TextField[multiline, name=jconsesyst,width=0.9\textwidth,  height=2cm, value={}]{}
+
+		\item Hat Ihre Anforderung Schnittstellen zu anderen Prozessen? \\
+		      \ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=consepro]{} {ja=j,nein=n} \\
+		      Wenn ja, welche Prozesse? \\
+		      \TextField[multiline, name=jconsepro,width=0.9\textwidth,  height=2cm, value={}]{}
+
+		\item Hat Ihre Anforderung Schnittstellen zu anderen Abteilungen? \\
+		      \ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=consedep]{} {ja=j,nein=n} \\
+		      Wenn ja, welche Abteilungen? \\
+		      \TextField[multiline, name=jconsedep,width=0.9\textwidth,  height=2cm, value={}]{}
+
+		\item Handelt es sich um die Anschaffung einer komplett neuen Hard- oder Software? \\
+		      \ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=soha]{} {ja=j,nein=n} \\
+		      Wenn ja, welche Hard- oder Software? \\
+		      \TextField[multiline, name=jsoja,width=0.9\textwidth,  height=2cm, value={}]{}
+
+		\item Ist Ihre Anforderung potentiell für weitere Kliniken relevant?
+		      \\ \ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=user]{} {ja=j,nein=n} \\
+		      Wenn ja, für welche Kliniken? \\
+		      \TextField[multiline, name=juser,width=0.9\textwidth,  height=2cm, value={}]{}
+
+		      \newpage
+
+		\item Werden durch die umzusetzende Anforderung personenbezogene Daten verarbeitet (allg. Daten (Name, E-Mail etc.), Gesundsheitsdaten, genetische Daten, biometrische Daten)? \\
+		      \ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=persodata]{} {ja=j,nein=n} \\
+		      Wenn ja, welche Daten? \\
+		      \TextField[multiline, name=jpersodata,width=0.9\textwidth,  height=2cm, value={}]{}
+
+		\item Hat die Anforderungen Schnittstellen außerhalb der UM? \\
+		      \ChoiceMenu[radio, radiosymbol=6 default=n, width=0.5cm, name=outum]{} {ja=j,nein=n} \\
+		      Wenn ja, welche? \\
+		      \TextField[multiline, name=joutum,width=0.9\textwidth,  height=2cm, value={}]{}
+
+	\end{enumerate}
 \end{Form}
